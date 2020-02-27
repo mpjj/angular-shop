@@ -4,9 +4,11 @@
   <h3>
     <a [title]="product.name + ': ' + product.description">
       {{product.name}}
-    </a>
-    
+    </a> 
   </h3>
+  <p *ngIf="product.description">
+    {{product.description}}
+    </p>
 </div>
 
 
